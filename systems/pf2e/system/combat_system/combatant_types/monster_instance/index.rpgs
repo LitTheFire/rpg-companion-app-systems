@@ -5,6 +5,7 @@ combatant monster_instance() = combatant(
     instance_resource_id = "monster_instance",
     side = "enemies",
     shows_in_party = false,
+    is_defeated = current_hp <= 0,
     on_create = sequence(
         effects = [
             setStat(
