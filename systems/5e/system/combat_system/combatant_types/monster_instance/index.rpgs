@@ -9,14 +9,22 @@ combatant monster_instance() = combatant(
         effects = [
             setStat(
                 stat = "tag_number",
-                new_value = roll(
-                    formula = "1d99999"
-                ),
+                new_value = max(
+                    flatAppend(
+                        [
+                            [0],
+                            map(
+                                all_monster_instance_combatants,
+                                mapper = ($combatant) => $combatant.tag_number
+                            )
+                        ]
+                    )
+                ) + 1,
                 aggregation_type = "set",
             ),
             setStat(
                 stat = "name",
-                new_value = $resource.name + " #" + tag_order,
+                new_value = $resource.name + " #" + tag_number,
                 aggregation_type = "set",
             ),
             setStat(
