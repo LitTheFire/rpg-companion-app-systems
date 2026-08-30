@@ -40,6 +40,7 @@ Typical use:
 """
 
 import argparse
+import collections
 import datetime
 import gzip
 import io
@@ -47,6 +48,7 @@ import json
 import shutil
 import subprocess
 import sys
+import tarfile
 import time
 import urllib.request
 from pathlib import Path
@@ -201,6 +203,34 @@ def load_staged(staging):
         f = sys_dir / "resources.rpg.gzip"
         if f.is_file() and f.read_bytes()[:2] != b"\x1f\x8b":
             problems.append(f"{sys_id}: resources.rpg.gzip is not gzip data")
+
+        # Index/archive parity: every indexed path must be ASCII (the app's
+        # tar reader decodes member names as Latin-1 — non-ASCII paths never
+        # match and the resource silently never installs), unique (a colliding
+        # path means one archive member serving several records), and actually
+        # present in the archive.
+        idx_file = sys_dir / "resources.json"
+        if idx_file.is_file() and f.is_file():
+            try:
+                entries = json.loads(idx_file.read_text())["resources"]
+                paths = [e["path"] for e in entries]
+                for p, n in collections.Counter(paths).items():
+                    if n > 1:
+                        problems.append(f"{sys_id}: {n} index entries share "
+                                        f"path {p}")
+                for p in paths:
+                    if any(ord(c) > 127 for c in p):
+                        problems.append(f"{sys_id}: non-ASCII index path {p}")
+                with tarfile.open(fileobj=io.BytesIO(
+                        gzip.decompress(f.read_bytes()))) as tar:
+                    members = set(tar.getnames())
+                missing = [p for p in paths if p not in members]
+                if missing:
+                    problems.append(f"{sys_id}: {len(missing)} index paths "
+                                    f"missing from the archive, e.g. "
+                                    f"{missing[:3]}")
+            except Exception as e:
+                problems.append(f"{sys_id}: parity check failed ({e})")
     root_rpg = staging / "systems.rpg"
     if not root_rpg.is_file():
         problems.append(f"missing {root_rpg}")
