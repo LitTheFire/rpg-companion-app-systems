@@ -36,7 +36,7 @@ DEV_TOOL_DIR = Path.home() / "Repositories" / "RPGCompanionApp" / "dev_tool"
 APP_ASSETS_DIR = (Path.home() / "Repositories" / "RPGCompanionApp" / "app"
                   / "assets" / "bundled_systems")
 DEFAULT_OUT = REPO_ROOT / "releases" / "starter"
-BUDGET_BYTES = int(2.8 * 1024 * 1024)
+BUDGET_BYTES = int(3.0 * 1024 * 1024)
 
 
 class Fatal(Exception):
