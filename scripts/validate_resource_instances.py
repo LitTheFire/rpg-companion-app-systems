@@ -7,7 +7,7 @@ import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 
 BASE_STAT_PATTERN = re.compile(r"^base\s+([^\s]+)\s+([A-Za-z0-9_]+)\s*\(")
@@ -320,6 +320,55 @@ def iter_instance_files(instances_root: Path) -> List[Path]:
     return files
 
 
+def find_duplicate_resources(
+    instance_files: List[Path],
+    repo_root: Path,
+) -> List[str]:
+    """Report instances that are indistinguishable to the release builder.
+
+    The builder names each archive member after resource_id + name + source,
+    so two instances agreeing on all three are one catalogue entry twice over.
+    Sometimes that is correct — PF2e has five distinct "Reach Spell" feats in
+    PC1, one per class — and sometimes it is a stale copy from an earlier
+    import generation. Nothing here can tell those apart, so this warns rather
+    than fails; the builder keeps their archive paths distinct either way.
+    """
+    seen: Dict[Tuple[str, str, str], List[Path]] = {}
+    for path in instance_files:
+        try:
+            data = read_json(path)
+        except Exception:  # noqa: BLE001 - parse errors are reported elsewhere
+            continue
+        if not isinstance(data, dict):
+            continue
+        stats = data.get("stats")
+        if not isinstance(stats, dict):
+            continue
+
+        def stat_value(key: str) -> str:
+            node = stats.get(key)
+            if isinstance(node, dict):
+                node = node.get("value")
+            return str(node).strip().lower() if node is not None else ""
+
+        name = stat_value("name")
+        if not name:
+            continue
+        key = (str(data.get("resource_id") or ""), name, stat_value("source"))
+        seen.setdefault(key, []).append(path)
+
+    warnings: List[str] = []
+    for (rid, name, source), paths in sorted(seen.items()):
+        if len(paths) < 2:
+            continue
+        listed = ", ".join(display_path(p, repo_root) for p in sorted(paths))
+        warnings.append(
+            f"{len(paths)} instances share resource_id='{rid}' name='{name}' "
+            f"source='{source}': {listed}"
+        )
+    return warnings
+
+
 def infer_system_from_path(path: Path, repo_root: Path) -> Optional[str]:
     try:
         rel = path.resolve().relative_to(repo_root.resolve())
@@ -391,6 +440,15 @@ def main() -> int:
             )
             continue
         validate_resource_instance(data, schema, errors, path, repo_root, [])
+
+    # Only meaningful over a whole system — a single file collides with nothing.
+    duplicates = [] if args.file else find_duplicate_resources(instance_files, repo_root)
+    if duplicates:
+        print("Duplicate resource warnings:", file=sys.stderr)
+        for warning in duplicates:
+            print(f"- {warning}", file=sys.stderr)
+        print(f"{len(duplicates)} duplicate name(s); the builder disambiguates "
+              "their archive paths by id.", file=sys.stderr)
 
     if errors:
         print("Validation errors:", file=sys.stderr)

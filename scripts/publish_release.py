@@ -221,6 +221,12 @@ def load_staged(staging):
                 for p in paths:
                     if any(ord(c) > 127 for c in p):
                         problems.append(f"{sys_id}: non-ASCII index path {p}")
+                    # Over 100 bytes a tar name needs a GNU long-name record.
+                    # The app's reader handles those, but nothing we ship has
+                    # ever exercised that path — keep it that way.
+                    if len(p.encode("utf-8")) > 100:
+                        problems.append(f"{sys_id}: index path over the 100-byte "
+                                        f"tar name limit ({len(p)}) {p}")
                 with tarfile.open(fileobj=io.BytesIO(
                         gzip.decompress(f.read_bytes()))) as tar:
                     members = set(tar.getnames())
