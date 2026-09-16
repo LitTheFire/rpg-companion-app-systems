@@ -8639,18 +8639,18 @@
                               "value": 3
                             },
                             "description": {
-                              "value": "You learn and additional spell when you reach certain levels in this class.\n\nYou also possess a preternatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly.\n\n| d6 | Gift |\n| --- | --- |\n| 1 | Illusory butterflies flutter around you while you take a short or long rest. |\n| 2 | Fresh, seasonal flowers sprout from your hair each dawn. |\n| 3 | You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice. |\n| 4 | Your shadow dances while no one is looking directly at it. |\n| 5 | Horns or antlers sprout from your head. |\n| 6 | Your skin and hair change color to match the season at each dawn. |"
+                              "value": "*3rd-level Fey Wanderer feature*\n\nYou learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n**Fey Wanderer Spells**\n\n| Ranger Level | Spells |\n| --- | --- |\n| 3rd | charm person |\n| 5th | misty step |\n| 9th | dispel magic |\n| 13th | dimension door |\n| 17th | mislead |\n\nYou also possess a preternatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly.\n\n**Feywild Gifts**\n\n| d6 | Gift |\n| --- | --- |\n| 1 | Illusory butterflies flutter around you while you take a short or long rest. |\n| 2 | Fresh, seasonal flowers sprout from your hair each dawn. |\n| 3 | You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice. |\n| 4 | Your shadow dances while no one is looking directly at it. |\n| 5 | Horns or antlers sprout from your head. |\n| 6 | Your skin and hair change color to match the season at each dawn. |"
                             },
                             "updated_at": {
-                              "value": "2026-05-18T22:07:01.618684"
+                              "value": "2026-08-12T16:05:32.649667"
                             },
-                            "id": "adb2aae9-de90-487f-950a-bfa1dbba80e8"
+                            "id": "8235b94d-0cde-4d16-a686-b9040d0015a2"
                           }
                         }
                       ]
                     },
                     "updated_at": {
-                      "value": "2026-05-18T22:07:01.618684"
+                      "value": "2026-08-12T16:05:32.649667"
                     },
                     "id": "fey_wanderer_magic"
                   }
@@ -8973,9 +8973,362 @@
               "value": 1
             },
             "updated_at": {
-              "value": "2026-05-18T22:07:01.618684"
+              "value": "2026-08-12T16:05:32.649667"
             },
-            "id": "ranger_fey_wanderer_[tce]"
+            "id": "ranger_fey_wanderer_[tce]",
+            "spells": {
+              "value": [
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 3
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "ccc0098b-99ac-484a-b5a7-fc4d3cb73c74",
+                          "name": {
+                            "value": "Charm Person"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_1"
+                          },
+                          "school": {
+                            "value": "spell_school_enchantment"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "30 feet"
+                          },
+                          "duration": {
+                            "value": "1 hour"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": false
+                          },
+                          "description": {
+                            "value": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you."
+                          },
+                          "higher_level_description": {
+                            "value": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+                          },
+                          "classes": {
+                            "value": [
+                              "bard",
+                              "druid",
+                              "sorcerer",
+                              "warlock",
+                              "blood_hunter",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "cf88d85f-6ee3-4564-b527-3b2094fba44d"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 5
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "f99a0b4e-6566-426a-bef9-de0846b90058",
+                          "name": {
+                            "value": "Misty Step"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_2"
+                          },
+                          "school": {
+                            "value": "spell_school_conjuration"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 bonus action"
+                          },
+                          "range": {
+                            "value": "Self"
+                          },
+                          "duration": {
+                            "value": "Instantaneous"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": false
+                          },
+                          "material": {
+                            "value": false
+                          },
+                          "description": {
+                            "value": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
+                          },
+                          "classes": {
+                            "value": [
+                              "sorcerer",
+                              "warlock",
+                              "blood_hunter",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "d906affa-5840-409c-9186-ba44f5b5e4f2"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 9
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "521de212-dc63-47b0-91a1-724d816799cc",
+                          "name": {
+                            "value": "Dispel Magic"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_3"
+                          },
+                          "school": {
+                            "value": "spell_school_abjuration"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "120 feet"
+                          },
+                          "duration": {
+                            "value": "Instantaneous"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": false
+                          },
+                          "description": {
+                            "value": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell\u2019s level. On a successful check, the spell ends."
+                          },
+                          "higher_level_description": {
+                            "value": "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell\u2019s level is equal to or less than the level of the spell slot you used."
+                          },
+                          "classes": {
+                            "value": [
+                              "artificer__eb_",
+                              "artificer__revised_",
+                              "bard",
+                              "cleric",
+                              "druid",
+                              "paladin",
+                              "sorcerer",
+                              "warlock",
+                              "blood_hunter",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "c5defece-aa31-4d15-9041-209d93da2daa"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 13
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "name": {
+                            "value": "Dimension Door"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_4"
+                          },
+                          "school": {
+                            "value": "spell_school_conjuration"
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "500 feet"
+                          },
+                          "duration": {
+                            "value": "Instantaneous"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "description": {
+                            "value": "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualise, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"\n\nYou can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.\n\nIf you would arrive in a place already occupied by an object or a creature, you and any creature travelling with you each take 4d6 force damage, and the spell fails to teleport you."
+                          },
+                          "classes": {
+                            "value": [
+                              "bard",
+                              "sorcerer",
+                              "warlock",
+                              "blood_hunter",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          },
+                          "id": "e0eb0f73-9fd2-4c24-87ea-37d373d70de0"
+                        }
+                      }
+                    },
+                    "id": "a86d9179-8404-4c8a-af8a-e614986b0efd"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 17
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "0f741ef1-fec5-4c47-9fb3-73c18ed43ebf",
+                          "name": {
+                            "value": "Mislead"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_5"
+                          },
+                          "school": {
+                            "value": "spell_school_illusion"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "Self"
+                          },
+                          "duration": {
+                            "value": "Concentration, up to 1 hour"
+                          },
+                          "verbal": {
+                            "value": false
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": false
+                          },
+                          "description": {
+                            "value": "You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell.\n\nYou can use your action to move your illusory double up to twice your speed and make it gesture, speak, and behave in whatever way you choose.\n\nYou can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surrounding."
+                          },
+                          "classes": {
+                            "value": [
+                              "bard",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "753c9c63-9d59-4c4e-9edf-928693b77bae"
+                  }
+                }
+              ]
+            }
           }
         },
         {
@@ -9033,6 +9386,37 @@
                       "value": "2026-05-18T22:07:01.618684"
                     },
                     "id": "gathered_swarm"
+                  }
+                },
+                {
+                  "resource_id": "feat",
+                  "stats": {
+                    "name": {
+                      "value": "Swarmkeeper Magic"
+                    },
+                    "descriptions": {
+                      "value": [
+                        {
+                          "resource_id": "levelled_description",
+                          "stats": {
+                            "level": {
+                              "value": 3
+                            },
+                            "description": {
+                              "value": "*3rd-level Swarmkeeper feature*\n\nYou learn the mage hand cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.\n\nYou also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n**Swarmkeeper Spells**\n\n| Ranger Level | Spells |\n| --- | --- |\n| 3rd | faerie fire |\n| 5th | web |\n| 9th | gaseous form |\n| 13th | arcane eye |\n| 17th | insect plague |"
+                            },
+                            "updated_at": {
+                              "value": "2026-08-12T16:05:32.649667"
+                            },
+                            "id": "6a7e650f-94af-4d52-907f-6231963f872e"
+                          }
+                        }
+                      ]
+                    },
+                    "updated_at": {
+                      "value": "2026-08-12T16:05:32.649667"
+                    },
+                    "id": "swarmkeeper_magic"
                   }
                 },
                 {
@@ -9309,9 +9693,695 @@
               "value": 1
             },
             "updated_at": {
-              "value": "2026-05-18T22:07:01.618684"
+              "value": "2026-08-12T16:05:32.649667"
             },
-            "id": "ranger_swarmkeeper_[tce]"
+            "id": "ranger_swarmkeeper_[tce]",
+            "spells": {
+              "value": [
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 3
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "b50728d2-a59b-4b66-bf38-cb1f3e28a9cd",
+                          "name": {
+                            "value": "Mage Hand"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_0"
+                          },
+                          "school": {
+                            "value": "spell_school_conjuration"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "30 feet"
+                          },
+                          "duration": {
+                            "value": "1 minute"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": false
+                          },
+                          "description": {
+                            "value": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\n\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\n\nThe hand can\u2019t attack, activate magic items, or carry more than 10 pounds."
+                          },
+                          "classes": {
+                            "value": [
+                              "artificer__eb_",
+                              "artificer__revised_",
+                              "bard",
+                              "sorcerer",
+                              "warlock",
+                              "blood_hunter",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "6c54382d-1aab-428b-b53c-c60f8c86e3ba"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 3
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "baf0ad28-e816-4cb4-94b1-a82e5f684a19",
+                          "name": {
+                            "value": "Faerie Fire"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_1"
+                          },
+                          "school": {
+                            "value": "spell_school_evocation"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "60 feet"
+                          },
+                          "duration": {
+                            "value": "Concentration, up to 1 minute"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": false
+                          },
+                          "material": {
+                            "value": false
+                          },
+                          "description": {
+                            "value": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.\n\nAny attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible."
+                          },
+                          "classes": {
+                            "value": [
+                              "artificer__eb_",
+                              "bard",
+                              "druid"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "6ecbaf82-ff40-4b0b-84c1-d8b88a691022"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 5
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "617861d7-8e23-4832-8f92-2c806e8d896c",
+                          "name": {
+                            "value": "Web"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_2"
+                          },
+                          "school": {
+                            "value": "spell_school_conjuration"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "60 feet"
+                          },
+                          "duration": {
+                            "value": "Concentration, up to 1 hour"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": true
+                          },
+                          "components": {
+                            "value": "a bit of spiderweb"
+                          },
+                          "description": {
+                            "value": "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.\n\nIf the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.\n\nEach creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.\n\nA creature restrained by the webs can use its action to make a Strength cheek against your spell save DC. If it suceeeds, it is no longer restrained.\n\nThe webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire."
+                          },
+                          "classes": {
+                            "value": [
+                              "artificer__eb_",
+                              "sorcerer",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": [
+                              {
+                                "resource_id": "levelled_damage_dice",
+                                "stats": {
+                                  "level": {
+                                    "value": 2
+                                  },
+                                  "damage_dice": {
+                                    "value": [
+                                      {
+                                        "resource_id": "damage_dice",
+                                        "stats": {
+                                          "dices": {
+                                            "value": [
+                                              {
+                                                "resource_id": "dice_roll",
+                                                "stats": {
+                                                  "dice_amount": {
+                                                    "value": 2
+                                                  },
+                                                  "dice_type": {
+                                                    "value": "d4"
+                                                  },
+                                                  "constant": {
+                                                    "value": 0
+                                                  },
+                                                  "id": "73e982b6-7966-49b1-bfd5-6df484432a9e",
+                                                  "updated_at": {
+                                                    "value": "2026-08-12T16:05:32.649667"
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "damage_type": {
+                                            "value": "fire"
+                                          },
+                                          "id": "0ce433d9-d297-4090-a80a-45ee216495a9",
+                                          "updated_at": {
+                                            "value": "2026-08-12T16:05:32.649667"
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "id": "bf6e018e-791c-493b-9e46-6a7d42ddf558",
+                                  "updated_at": {
+                                    "value": "2026-08-12T16:05:32.649667"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "06d6e85a-92ca-4397-a84d-6c69400e44cd"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 9
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "f7248348-b4e4-44d0-a674-6764ca07966b",
+                          "name": {
+                            "value": "Gaseous Form"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_3"
+                          },
+                          "school": {
+                            "value": "spell_school_transmutation"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "Touch"
+                          },
+                          "duration": {
+                            "value": "Concentration, up to 1 hour"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": true
+                          },
+                          "components": {
+                            "value": "a bit of gauze and a wisp of smoke"
+                          },
+                          "description": {
+                            "value": "You transform a willing creature you touch, along with everything it\u2019s wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn\u2019t affected.\n\nWhile in this form, the target\u2019s only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.\n\nWhile in the form of a misty cloud, the target can\u2019t talk or manipulate objects, and any objects it w as carrying or holding can\u2019t be dropped, used, or otherwise interacted with. The target can\u2019t attack or cast spells."
+                          },
+                          "classes": {
+                            "value": [
+                              "artificer",
+                              "artificer__revised_",
+                              "sorcerer",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "f14f1cc5-a932-4066-8357-6585e96bfa35"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 13
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "id": "2c973553-5991-4bb0-a3d3-f1faf2a954ba",
+                          "name": {
+                            "value": "Arcane Eye"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_4"
+                          },
+                          "school": {
+                            "value": "spell_school_divination"
+                          },
+                          "ritual": {
+                            "value": false
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "30 feet"
+                          },
+                          "duration": {
+                            "value": "Concentration, up to 1 hour"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": true
+                          },
+                          "components": {
+                            "value": "a bit of bat fur"
+                          },
+                          "description": {
+                            "value": "You create an invisible, magical eye within range that hovers in the for the duration.\n\nYou mentally recieve visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.\n\nAs an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+                          },
+                          "classes": {
+                            "value": [
+                              "artificer",
+                              "artificer__eb_",
+                              "artificer__revised_",
+                              "fighter",
+                              "rogue",
+                              "wizard"
+                            ]
+                          },
+                          "dice": {
+                            "value": []
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          }
+                        }
+                      }
+                    },
+                    "id": "9bdd34d8-664d-45b1-803c-656cdbef2f43"
+                  }
+                },
+                {
+                  "resource_id": "levelled_spell",
+                  "stats": {
+                    "level": {
+                      "value": 17
+                    },
+                    "spell": {
+                      "value": {
+                        "resource_id": "spell",
+                        "stats": {
+                          "name": {
+                            "value": "Insect Plague"
+                          },
+                          "source": {
+                            "value": "phb"
+                          },
+                          "level": {
+                            "value": "spell_level_5"
+                          },
+                          "school": {
+                            "value": "spell_school_conjuration"
+                          },
+                          "casting_time": {
+                            "value": "1 action"
+                          },
+                          "range": {
+                            "value": "300 feet"
+                          },
+                          "duration": {
+                            "value": "Concentration, up to 10 minutes"
+                          },
+                          "verbal": {
+                            "value": true
+                          },
+                          "somatic": {
+                            "value": true
+                          },
+                          "material": {
+                            "value": true
+                          },
+                          "components": {
+                            "value": "a few grains of sugar, some kernels of grain, and a smear of fat"
+                          },
+                          "description": {
+                            "value": "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range, The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.\n\nWhen the area appears, each creature in it must make a Constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there."
+                          },
+                          "higher_level_description": {
+                            "value": "When you cast this spell using a spell slot of 6th levei or higher, the damage increases by 1d10 for each slot level above 5th."
+                          },
+                          "classes": {
+                            "value": [
+                              "cleric",
+                              "druid",
+                              "sorcerer"
+                            ]
+                          },
+                          "dice": {
+                            "value": [
+                              {
+                                "resource_id": "levelled_damage_dice",
+                                "stats": {
+                                  "level": {
+                                    "value": 5
+                                  },
+                                  "damage_dice": {
+                                    "value": [
+                                      {
+                                        "resource_id": "damage_dice",
+                                        "stats": {
+                                          "dices": {
+                                            "value": [
+                                              {
+                                                "resource_id": "dice_roll",
+                                                "stats": {
+                                                  "dice_amount": {
+                                                    "value": 4
+                                                  },
+                                                  "dice_type": {
+                                                    "value": "d10"
+                                                  },
+                                                  "updated_at": {
+                                                    "value": "2026-08-12T16:05:32.649667"
+                                                  },
+                                                  "id": "33fdeaa3-3619-415e-a96b-886df5c13545"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "damage_type": {
+                                            "value": "piercing"
+                                          },
+                                          "updated_at": {
+                                            "value": "2026-08-12T16:05:32.649667"
+                                          },
+                                          "id": "7df82331-a0e6-4341-8947-b1b8fa470d82"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "updated_at": {
+                                    "value": "2026-08-12T16:05:32.649667"
+                                  },
+                                  "id": "c2262ecb-acf8-4be4-9ec6-645d4cb9a195"
+                                }
+                              },
+                              {
+                                "resource_id": "levelled_damage_dice",
+                                "stats": {
+                                  "level": {
+                                    "value": 6
+                                  },
+                                  "damage_dice": {
+                                    "value": [
+                                      {
+                                        "resource_id": "damage_dice",
+                                        "stats": {
+                                          "dices": {
+                                            "value": [
+                                              {
+                                                "resource_id": "dice_roll",
+                                                "stats": {
+                                                  "dice_amount": {
+                                                    "value": 5
+                                                  },
+                                                  "dice_type": {
+                                                    "value": "d10"
+                                                  },
+                                                  "updated_at": {
+                                                    "value": "2026-08-12T16:05:32.649667"
+                                                  },
+                                                  "id": "84eb6744-f5e5-45b7-a7ca-3daa5457d952"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "damage_type": {
+                                            "value": "piercing"
+                                          },
+                                          "updated_at": {
+                                            "value": "2026-08-12T16:05:32.649667"
+                                          },
+                                          "id": "eb3868c1-8bee-4619-a21a-8f826d669708"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "updated_at": {
+                                    "value": "2026-08-12T16:05:32.649667"
+                                  },
+                                  "id": "4a7cde4c-8367-4a9f-a4a9-10b718c056d6"
+                                }
+                              },
+                              {
+                                "resource_id": "levelled_damage_dice",
+                                "stats": {
+                                  "level": {
+                                    "value": 7
+                                  },
+                                  "damage_dice": {
+                                    "value": [
+                                      {
+                                        "resource_id": "damage_dice",
+                                        "stats": {
+                                          "dices": {
+                                            "value": [
+                                              {
+                                                "resource_id": "dice_roll",
+                                                "stats": {
+                                                  "dice_amount": {
+                                                    "value": 6
+                                                  },
+                                                  "dice_type": {
+                                                    "value": "d10"
+                                                  },
+                                                  "id": "4edf69e3-1732-438a-b7e6-a10a5f36bb19"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "damage_type": {
+                                            "value": "piercing"
+                                          },
+                                          "id": "bd5bd3c9-5e76-487c-b5a8-c8d5d215f6c5"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "id": "befaecbf-f68e-46b1-aabf-32ea2eb60e93"
+                                }
+                              },
+                              {
+                                "resource_id": "levelled_damage_dice",
+                                "stats": {
+                                  "level": {
+                                    "value": 8
+                                  },
+                                  "damage_dice": {
+                                    "value": [
+                                      {
+                                        "resource_id": "damage_dice",
+                                        "stats": {
+                                          "dices": {
+                                            "value": [
+                                              {
+                                                "resource_id": "dice_roll",
+                                                "stats": {
+                                                  "dice_amount": {
+                                                    "value": 7
+                                                  },
+                                                  "dice_type": {
+                                                    "value": "d10"
+                                                  },
+                                                  "id": "9ea2e702-cc59-4f2d-96c0-381be20d03e3"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "damage_type": {
+                                            "value": "piercing"
+                                          },
+                                          "id": "8b0474ad-23b5-4f94-884d-5ff47c497d67"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "id": "4ec739c8-dceb-4f36-9cb8-3ca25ed3bec3"
+                                }
+                              },
+                              {
+                                "resource_id": "levelled_damage_dice",
+                                "stats": {
+                                  "level": {
+                                    "value": 9
+                                  },
+                                  "damage_dice": {
+                                    "value": [
+                                      {
+                                        "resource_id": "damage_dice",
+                                        "stats": {
+                                          "dices": {
+                                            "value": [
+                                              {
+                                                "resource_id": "dice_roll",
+                                                "stats": {
+                                                  "dice_amount": {
+                                                    "value": 8
+                                                  },
+                                                  "dice_type": {
+                                                    "value": "d10"
+                                                  },
+                                                  "id": "3929c31e-26f8-4bce-9ded-de7be0628927"
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "damage_type": {
+                                            "value": "piercing"
+                                          },
+                                          "id": "f6725d50-8290-4cde-b5a0-f4edf640c8a3"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "id": "161fcff1-b3e9-4182-81e6-881ea2a42618"
+                                }
+                              }
+                            ]
+                          },
+                          "updated_at": {
+                            "value": "2026-08-12T16:05:32.649667"
+                          },
+                          "id": "2af30f5b-0cd7-4f6e-88ec-5f3e1fe0b8d4"
+                        }
+                      }
+                    },
+                    "id": "ff0b67e9-11e8-4e28-8388-c7433262cbc9"
+                  }
+                }
+              ]
+            }
           }
         },
         {
@@ -10125,7 +11195,7 @@
       ]
     },
     "updated_at": {
-      "value": "2026-05-18T22:07:01.618684"
+      "value": "2026-08-12T16:05:32.649667"
     },
     "id": "ranger"
   }

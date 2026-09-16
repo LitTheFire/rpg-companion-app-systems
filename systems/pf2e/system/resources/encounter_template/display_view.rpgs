@@ -20,6 +20,7 @@ view encounter_template_display() =
             id = "encounter_template_display_description",
             text = description,
             style = "text",
+            markdown = true,
           ),
           composite(
             id = "encounter_template_display_pf2e_budget",

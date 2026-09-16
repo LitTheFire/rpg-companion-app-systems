@@ -11,8 +11,8 @@ mechanic weapon_roll_attack(event_names = "attack") =
               concat(
                 [
                   when {
-                    $view.weapon_display_advantage_disadvantage_select == "disadvantage" -> "min(2d20) + ",
-                    $view.weapon_display_advantage_disadvantage_select == "advantage" -> "max(2d20) + ",
+                    ($view?.weapon_display_advantage_disadvantage_select? ?? advantage_status) == "disadvantage" -> "min(2d20) + ",
+                    ($view?.weapon_display_advantage_disadvantage_select? ?? advantage_status) == "advantage" -> "max(2d20) + ",
                     else -> "1d20 + ",
                   },
                   attack_bonus,

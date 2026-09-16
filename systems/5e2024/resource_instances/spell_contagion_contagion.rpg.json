@@ -30,7 +30,7 @@
       "value": true
     },
     "description": {
-      "value": "Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition. Also, choose one ability when you cast the spell. While Poisoned, the target has Disadvantage on saving throws made with the chosen ability.\n\nThe target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it.\n\nWhenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it"
+      "value": "Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition. Also, choose one ability when you cast the spell. While Poisoned, the target has Disadvantage on saving throws made with the chosen ability.\n\nThe target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it.\n\nWhenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it."
     },
     "classes": {
       "value": [
@@ -39,10 +39,61 @@
       ]
     },
     "dice": {
-      "value": []
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_damage_dice",
+          "stats": {
+            "level": {
+              "value": 5
+            },
+            "damage_dice": {
+              "value": [
+                {
+                  "system": "5e2024",
+                  "resource_id": "damage_dice",
+                  "stats": {
+                    "dices": {
+                      "value": [
+                        {
+                          "system": "5e2024",
+                          "resource_id": "dice_roll",
+                          "stats": {
+                            "dice_amount": {
+                              "value": 11
+                            },
+                            "dice_type": {
+                              "value": "d8"
+                            },
+                            "updated_at": {
+                              "value": "2026-08-12T16:05:32.649667"
+                            },
+                            "id": "fdea703f-1c26-451e-9310-08215bfdc04c"
+                          }
+                        }
+                      ]
+                    },
+                    "damage_type": {
+                      "value": "necrotic"
+                    },
+                    "updated_at": {
+                      "value": "2026-08-12T16:05:32.649667"
+                    },
+                    "id": "1bdee501-9eb1-4df0-9185-04b9209a6069"
+                  }
+                }
+              ]
+            },
+            "updated_at": {
+              "value": "2026-08-12T16:05:32.649667"
+            },
+            "id": "4ee7da67-05c5-482f-821f-0c9cb9df6812"
+          }
+        }
+      ]
     },
     "updated_at": {
-      "value": "2024-12-20T18:50:46.649593"
+      "value": "2026-08-12T16:05:32.649667"
     },
     "id": "contagion"
   }

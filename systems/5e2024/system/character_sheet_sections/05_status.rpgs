@@ -3,7 +3,7 @@ character_sheet_section status() =
     id = "status_section",
     show_divider = true,
     content_item_min_width = 125,
-    collapsible = false,
+    collapsible = true,
     header = [
       avatar(
         id = "avatar_view",
