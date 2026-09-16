@@ -124,7 +124,7 @@
       "value": "celestial"
     },
     "alignment": {
-      "value": "chaotic_good__75%__or_neutral_evil__25%_"
+      "value": "chaotic_good"
     },
     "traits": {
       "value": [
@@ -1062,7 +1062,7 @@
       "value": []
     },
     "updated_at": {
-      "value": "2026-05-19T09:30:39.509489"
+      "value": "2026-09-15T22:55:00.000000"
     }
   }
 }

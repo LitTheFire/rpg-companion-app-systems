@@ -577,10 +577,10 @@
                                     ]
                                   },
                                   "damage_type": {
-                                    "value": "No match found for 'unknown'"
+                                    "value": "fire"
                                   },
                                   "updated_at": {
-                                    "value": "2024-12-20T18:50:46.665162"
+                                    "value": "2026-09-15T22:55:00.000000"
                                   },
                                   "id": "2ae01c3f-6884-4318-beaf-dab8eb9255d9"
                                 }
@@ -607,6 +607,9 @@
         }
       ]
     },
-    "id": "fad21d2c-fd65-4fcb-aad7-89ea712c8983"
+    "id": "fad21d2c-fd65-4fcb-aad7-89ea712c8983",
+    "updated_at": {
+      "value": "2026-09-15T22:55:00.000000"
+    }
   }
 }

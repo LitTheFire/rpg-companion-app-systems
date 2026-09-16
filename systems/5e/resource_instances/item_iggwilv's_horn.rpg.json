@@ -212,10 +212,10 @@
                                     ]
                                   },
                                   "damage_type": {
-                                    "value": "No match found for 'unknown'"
+                                    "value": "necrotic"
                                   },
                                   "updated_at": {
-                                    "value": "2024-12-20T18:50:46.674200"
+                                    "value": "2026-09-15T22:55:00.000000"
                                   },
                                   "id": "056c6f50-2825-4fed-aad6-97157621c12c"
                                 }
@@ -615,7 +615,7 @@
       ]
     },
     "updated_at": {
-      "value": "2024-12-20T18:50:35.683997"
+      "value": "2026-09-15T22:55:00.000000"
     },
     "id": "iggwilvs_horn"
   }

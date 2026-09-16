@@ -44730,7 +44730,7 @@
                     "value": "humanoid"
                   },
                   "alignment": {
-                    "value": "neutral"
+                    "value": "true_neutral"
                   },
                   "traits": {
                     "value": [
@@ -45129,7 +45129,7 @@
                     ]
                   },
                   "updated_at": {
-                    "value": "2026-02-07T10:53:53.727929"
+                    "value": "2026-09-15T22:55:00.000000"
                   }
                 },
                 "system": "5e"
@@ -46355,7 +46355,7 @@
       ]
     },
     "updated_at": {
-      "value": "2026-05-19T09:38:18.758587"
+      "value": "2026-09-15T22:55:00.000000"
     },
     "id": "grassland"
   }
