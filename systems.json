@@ -1,0 +1,20 @@
+{
+  "systems": [
+    {
+      "id": "5e",
+      "name": "5e",
+      "abbreviation": "5e",
+      "version": "0.9.1",
+      "min_app_version": "1.2.0",
+      "path": "5e"
+    },
+    {
+      "id": "5e2024",
+      "name": "5.5e",
+      "abbreviation": "5.5e",
+      "version": "0.9.1",
+      "min_app_version": "1.2.0",
+      "path": "5e2024"
+    }
+  ]
+}
