@@ -1,0 +1,34 @@
+{
+  "system": "5e",
+  "resource_id": "feat",
+  "stats": {
+    "name": {
+      "value": "Boon of Speed"
+    },
+    "source": {
+      "value": "dmg"
+    },
+    "type": {
+      "value": "epic_boon"
+    },
+    "prerequisites": {
+      "value": "Level 20+"
+    },
+    "descriptions": {
+      "value": [
+        {
+          "system": "5e",
+          "resource_id": "levelled_description",
+          "stats": {
+            "description": {
+              "value": "Your walking speed increases by 30 feet. In addition, you can use a bonus action to take the Dash or Disengage action. Once you do so, you can't do so again until you finish a short rest."
+            },
+            "level": {
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "system": "5e",
+  "resource_id": "feat",
+  "stats": {
+    "name": {
+      "value": "Boon of Spell Recall"
+    },
+    "source": {
+      "value": "dmg"
+    },
+    "type": {
+      "value": "epic_boon"
+    },
+    "prerequisites": {
+      "value": "Level 20+"
+    },
+    "descriptions": {
+      "value": [
+        {
+          "system": "5e",
+          "resource_id": "levelled_description",
+          "stats": {
+            "description": {
+              "value": "You can cast any spell you know or have prepared without expending a spell slot. Once you do so, you can't use this boon again until you finish a long rest."
+            },
+            "level": {
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  }
+}

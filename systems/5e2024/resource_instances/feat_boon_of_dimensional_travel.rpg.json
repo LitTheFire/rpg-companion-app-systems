@@ -1,0 +1,34 @@
+{
+  "system": "5e2024",
+  "resource_id": "feat",
+  "stats": {
+    "name": {
+      "value": "Boon of Dimensional Travel"
+    },
+    "source": {
+      "value": "dmg"
+    },
+    "type": {
+      "value": "epic_boon"
+    },
+    "prerequisites": {
+      "value": "Level 20+"
+    },
+    "descriptions": {
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_description",
+          "stats": {
+            "description": {
+              "value": "Immediately after you take the Attack action or cast a spell, you can teleport up to 30 feet to an unoccupied space you can see."
+            },
+            "level": {
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  }
+}

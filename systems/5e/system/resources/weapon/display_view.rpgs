@@ -63,6 +63,23 @@ view weapon_display() =
         ],
       ),
       composite(
+        id = "weapon_display_mastery_composite",
+        margin_top = 16,
+        subviews = [
+          text(
+            id = "weapon_display_mastery_label",
+            text = "Mastery: ",
+            style = "text",
+            bold = true,
+          ),
+          text(
+            id = "weapon_display_mastery_label",
+            text = enumeratedName(enumerated_type = "weapon_masteries", id = mastery),
+            style = "text",
+          ),
+        ],
+      ),
+      composite(
         id = "weapon_display_attack_bonus_composite",
         margin_top = 8,
         is_visible = defined(stat = "$character"),

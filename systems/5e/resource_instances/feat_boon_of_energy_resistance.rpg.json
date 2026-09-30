@@ -1,0 +1,34 @@
+{
+  "system": "5e",
+  "resource_id": "feat",
+  "stats": {
+    "name": {
+      "value": "Boon of Energy Resistance"
+    },
+    "source": {
+      "value": "dmg"
+    },
+    "type": {
+      "value": "epic_boon"
+    },
+    "prerequisites": {
+      "value": "Level 20+"
+    },
+    "descriptions": {
+      "value": [
+        {
+          "system": "5e",
+          "resource_id": "levelled_description",
+          "stats": {
+            "description": {
+              "value": "You gain resistance to two damage types of your choice from: Acid, Cold, Fire, Lightning, Necrotic, Poison, Radiant, or Thunder. You can change these choices whenever you finish a Short or Long Rest."
+            },
+            "level": {
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  }
+}

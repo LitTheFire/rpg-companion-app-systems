@@ -1,0 +1,34 @@
+{
+  "system": "5e",
+  "resource_id": "feat",
+  "stats": {
+    "name": {
+      "value": "Boon of the Stormborn"
+    },
+    "source": {
+      "value": "dmg"
+    },
+    "type": {
+      "value": "epic_boon"
+    },
+    "prerequisites": {
+      "value": "Level 20+"
+    },
+    "descriptions": {
+      "value": [
+        {
+          "system": "5e",
+          "resource_id": "levelled_description",
+          "stats": {
+            "description": {
+              "value": "You have immunity to lightning and thunder damage. You can also cast Thunderwave (save DC 15) at will, without using a spell slot or any components."
+            },
+            "level": {
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  }
+}

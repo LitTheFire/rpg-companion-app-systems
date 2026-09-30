@@ -27,6 +27,7 @@
     "is_versatile",
     "requires_attunement",
     "display_type",
+    "mastery",
     "rarity"
   ],
   "search_filters": [
@@ -125,6 +126,11 @@
       "stat": "source",
       "options": "source",
       "options_display_stat": "abbreviation"
+    },
+    {
+      "name": "Mastery",
+      "stat": "mastery",
+      "options": "weapon_masteries"
     },
     {
       "name": "Rarity",

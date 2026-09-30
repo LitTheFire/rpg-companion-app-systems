@@ -88,6 +88,8 @@ base integer charisma_saving_throw_modifier(name = "Charisma saving throw modifi
 
 base string skills(name = "Skills") = "";
 
+base string gear(name = "Gear") = "";
+
 base string vulnerabilities(name = "Vulnerabilities") = "";
 
 base string immunities(name = "Immunitites") = "";
@@ -121,6 +123,8 @@ base string spellcasting_ability(name = "Spellcasting ability") =
   "intelligence";
 
 base string[] habitat(name = "Habitat") = [];
+
+base string[] treasure(name = "Treasure") = [];
 
 calc bool in_combat(name = "In combat") = $parent?.in_combat? ?? false;
 
@@ -272,6 +276,15 @@ calc string formatted_habitats(name = "Formatted habitats") =
     map(
       habitat,
       mapper = ($mapValue) => enumeratedName(enumerated_type = "monster_habitats", id = $mapValue),
+    ),
+    separator = ", ",
+  );
+
+calc string formatted_treasure(name = "Formatted treasure") =
+  joinToString(
+    map(
+      treasure,
+      mapper = ($mapValue) => enumeratedName(enumerated_type = "monster_treasure_themes", id = $mapValue),
     ),
     separator = ", ",
   );

@@ -124,6 +124,24 @@ view monster_edit() =
               ),
             ],
           ),
+          composite(
+            id = "monster_edit_basics_treasure",
+            margin_top = 4,
+            subviews = [
+              text(
+                id = "monster_edit_basics_treasure_label",
+                text = "Treasure: ",
+                style = "text",
+                bold = true,
+              ),
+              select(
+                id = "monster_edit_basics_treasure_select",
+                stat = "treasure",
+                multi_select = true,
+                options = "monster_treasure_themes",
+              ),
+            ],
+          ),
           divider(id = "monster_edit_basics_divider_1"),
           composite(
             id = "monster_edit_basics_armor_class",
@@ -557,6 +575,13 @@ view monster_edit() =
             edit_stat = "skills",
             style = "text",
             label = "Skills",
+            max_length = 140,
+          ),
+          text(
+            id = "monster_edit_gear",
+            edit_stat = "gear",
+            style = "text",
+            label = "Gear",
             max_length = 140,
           ),
           text(

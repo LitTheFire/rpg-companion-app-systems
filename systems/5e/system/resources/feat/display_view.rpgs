@@ -26,6 +26,8 @@ view feat_display() =
                 style = "caption",
                 is_visible = !isEmpty(source),
               ),
+              text(id = "feat_display_type", style = "caption", text = type_name),
+              text(id = "feat_display_type_separator", text = ", ", style = "caption"),
               text(
                 id = "feat_display_prerequisites",
                 text = concat(["Prerequisites: ", prerequisites]),
@@ -101,7 +103,7 @@ view feat_display() =
                 view_type = "display",
               ),
               resourceSection(
-                 id = "feat_display_selectable_features",
+                id = "feat_display_selectable_features",
                 resource_id = "feat",
                 resource_stat = "sorted_selectable_features",
                 content_item_min_width = 1,

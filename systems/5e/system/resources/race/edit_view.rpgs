@@ -361,7 +361,7 @@ view race_edit() =
             pop_up_button_text = name,
             validation_message = if !isEmpty(
               filter(
-                $view.race_edit_visual_traits_array,
+                $view.race_edit_visual_traits,
                 filter = ($filterValue) => isEmpty($filterValue.name),
               ),
             )

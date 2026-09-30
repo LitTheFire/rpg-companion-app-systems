@@ -37,6 +37,17 @@ view weapon_edit() =
           ),
         ],
       ),
+      composite(
+        id = "weapon_edit_mastery",
+        subviews = [
+          text(id = "weapon_edit_mastery_label", text = "Mastery: ", style = "text"),
+          select(
+            id = "weapon_edit_mastery_select",
+            options = "weapon_masteries",
+            stat = "mastery",
+          ),
+        ],
+      ),
       text(
         id = "weapon_edit_description",
         edit_stat = "description",
@@ -85,6 +96,13 @@ view weapon_edit() =
             id = "weapon_edit_attack_ability",
             options = "ability",
             stat = "attack_ability",
+          ),
+          checkbox(
+            id = "weapon_edit_add_attack_ability_to_damage",
+            stat = "add_attack_ability_to_damage",
+            label = "Add to damage",
+            label_alignment = "right",
+            style = "checkbox",
           ),
         ],
       ),

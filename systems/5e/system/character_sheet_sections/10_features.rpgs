@@ -90,5 +90,11 @@ character_sheet_section features() =
         read_only = false,
         resource_id = "feat",
       ),
+      resourceSection(
+        id = "selected_selectable_feat_list",
+        resource_stat = "selected_selectable_feats",
+        read_only = true,
+        resource_id = "feat",
+      ),
     ],
   );

@@ -1,0 +1,34 @@
+{
+  "system": "5e",
+  "resource_id": "feat",
+  "stats": {
+    "name": {
+      "value": "Boon of Fortitude"
+    },
+    "source": {
+      "value": "dmg"
+    },
+    "type": {
+      "value": "epic_boon"
+    },
+    "prerequisites": {
+      "value": "Level 20+"
+    },
+    "descriptions": {
+      "value": [
+        {
+          "system": "5e",
+          "resource_id": "levelled_description",
+          "stats": {
+            "description": {
+              "value": "Your hit point maximum increases by 40. Whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier (once per turn)."
+            },
+            "level": {
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  }
+}

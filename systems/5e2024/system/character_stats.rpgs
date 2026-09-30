@@ -1446,7 +1446,7 @@ calc resource<class_details> last_level_up_class_details(name = "Last level up c
   );
 
 calc bool should_show_asi(name = "Should show ASI") =
-  last_level_up_class_details?.class_level == 4 || last_level_up_class_details?.class_level == 8 || last_level_up_class_details?.class_level == 12 || last_level_up_class_details?.class_level == 16 || last_level_up_class_details?.class_level == 19 || contains(
+  last_level_up_class_details?.class_level == 4 || last_level_up_class_details?.class_level == 8 || last_level_up_class_details?.class_level == 12 || last_level_up_class_details?.class_level == 16 || last_level_up_class_details?.class_level == 19 || last_level_up_class_details?.class_level >= 20 || contains(
     haystack = toLowerCase((last_level_up_class_details?.class.name ?? "")),
     needle = "rogue",
   ) && last_level_up_class_details?.class_level == 10 || contains(

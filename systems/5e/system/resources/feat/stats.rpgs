@@ -2,6 +2,8 @@ base string name(name = "Name") = "";
 
 base string source(name = "Source") = "";
 
+base string type(name = "Type") = "general";
+
 base string prerequisites(name = "Prerequisites") = "";
 
 base resource<levelled_description>[] descriptions(name = "Descriptions") = [];
@@ -222,12 +224,15 @@ calc string[] chosen_selectable_features(name = "Chosen selectable features") =
     ),
   );
 
+calc bool is_selected_selectable_feature(name = "Is selected selectable feature") =
+  contains(haystack = selected_selectable_feature_ids, needle = id);
+
 calc bool should_load_effects(name = "Should load effects") =
   $parent?.should_load_effects? ?? true
     && (!is_selectable_feature || is_selected_selectable_feature);
 
-calc bool is_selected_selectable_feature(name = "Is selected selectable feature") =
-  contains(haystack = selected_selectable_feature_ids, needle = id);
+calc string type_name(name = "Type name") =
+  enumeratedName(enumerated_type = "feat_types", id = type);
 
 calc string list_name(name = "List view name") =
   if show_level_in_name then level_plus_name else name;

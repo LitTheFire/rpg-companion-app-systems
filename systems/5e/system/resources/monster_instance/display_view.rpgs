@@ -188,6 +188,19 @@ view monster_instance_display() =
         ],
       ),
       composite(
+        id = "monster_instance_display_gear_comp",
+        is_visible = !isEmpty($resource.gear),
+        subviews = [
+          text(
+            id = "monster_instance_display_gear_label",
+            text = "Gear: ",
+            style = "text",
+            bold = true,
+          ),
+          text(id = "monster_instance_display_gear", text = $resource.gear, style = "text"),
+        ],
+      ),
+      composite(
         id = "monster_instance_display_vulnerabilities_comp",
         is_visible = !isEmpty($resource.vulnerabilities),
         subviews = [
@@ -372,6 +385,18 @@ view monster_instance_display() =
             bold = true,
           ),
           text(id = "monster_instance_display_habitat", text = $resource.formatted_habitats, style = "text"),
+        ],
+      ),
+      composite(
+        id = "monster_instance_display_treasure",
+        subviews = [
+          text(
+            id = "monster_instance_display_treasure_label",
+            text = "Treasure: ",
+            style = "text",
+            bold = true,
+          ),
+          text(id = "monster_instance_display_treasure", text = $resource.formatted_treasure, style = "text"),
         ],
       ),
     ],

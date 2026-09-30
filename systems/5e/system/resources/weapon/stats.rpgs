@@ -4,6 +4,8 @@ base string source(name = "Source") = "";
 
 base bool is_core(name = "Core") = false;
 
+base string mastery(name = "Mastery") = "none";
+
 base string description(name = "Description") = "";
 
 base resource<cost> cost(name = "Cost") = null;
@@ -13,6 +15,9 @@ base resource<weight> weight(name = "Weight") = null;
 base string type(name = "Type") = "club";
 
 base string attack_ability(name = "Attack ability") = "strength";
+
+base bool add_attack_ability_to_damage(name = "Add attack ability to damage") =
+  true;
 
 base string rarity(name = "Rarity") = "common";
 
@@ -132,6 +137,11 @@ calc string properties(name = "Properties") =
               enumeratedName(enumerated_type = "item_rarity", id = rarity),
             ]
           else []),
+        (if mastery != "none"
+          then [
+              enumeratedName(enumerated_type = "weapon_masteries", id = mastery),
+            ]
+          else []),
         (if is_two_handed then ["two-handed"] else []),
         (if is_versatile then [concat(["versatile"])] else []),
         (if is_silver then ["silver"] else []),
@@ -166,7 +176,7 @@ calc integer attack_bonus(name = "Attack bonus") =
   ) + (if is_proficient then $character.proficiency_bonus else 0) + extra_attack_bonus;
 
 calc integer damage_bonus(name = "Damage bonus") =
-  if defined(stat = "$character")
+  if defined(stat = "$character") && add_attack_ability_to_damage
     then max(
         flatAppend(
           [

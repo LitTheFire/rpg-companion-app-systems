@@ -3,6 +3,7 @@ view feat_search_item() =
     id = "feat_search_item",
     title = name,
     subtitle = list_view_description,
+    first_line_extra = type_name,
     chips = [
       createChip(
         id = "spell_search_item_source_chip",

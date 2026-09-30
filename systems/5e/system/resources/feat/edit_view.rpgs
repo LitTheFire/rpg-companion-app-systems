@@ -25,6 +25,15 @@ view feat_edit() =
         ],
         is_visible = !defined(stat = "$parent"),
       ),
+      composite(
+        id = "feat_edit_type",
+        margin_top = 4,
+        subviews = [
+          text(id = "feat_edit_type_label", text = "Type: ", style = "text"),
+          select(id = "feat_edit_type_select", options = "feat_types", stat = "type"),
+        ],
+        is_visible = !defined(stat = "$parent"),
+      ),
       text(
         id = "feat_edit_prerequisites",
         edit_stat = "prerequisites",
