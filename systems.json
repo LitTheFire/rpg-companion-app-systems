@@ -7,14 +7,6 @@
       "version": "0.9.6",
       "min_app_version": "1.2.0",
       "path": "5e"
-    },
-    {
-      "id": "5efused",
-      "name": "5e Fusion (legacy 0.9.5)",
-      "abbreviation": "5E+old",
-      "version": "0.9.5",
-      "min_app_version": "1.2.0",
-      "path": "5efused"
     }
   ]
 }
