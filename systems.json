@@ -1,12 +1,12 @@
 {
   "systems": [
     {
-      "id": "5efused",
+      "id": "5e",
       "name": "5e Fusion",
       "abbreviation": "5E+",
-      "version": "0.9.5",
+      "version": "0.9.6",
       "min_app_version": "1.2.0",
-      "path": "5efused"
+      "path": "5e"
     }
   ]
 }
