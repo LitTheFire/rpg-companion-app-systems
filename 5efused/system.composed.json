@@ -2,7 +2,7 @@
   "id": "5efused",
   "name": "5e Fusion",
   "abbreviation": "5E+",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "min_app_version": "1.2.0",
   "character_indexed_stats": [
     "name",
