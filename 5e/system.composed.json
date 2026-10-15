@@ -2,7 +2,7 @@
   "id": "5e",
   "name": "5e Fusion",
   "abbreviation": "5E+",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "min_app_version": "1.2.0",
   "character_indexed_stats": [
     "name",
@@ -38864,6 +38864,99 @@
           "sub_value_type": "resource",
           "resource_type": "levelled_amount",
           "name": "Spell slots level 10 (per level)"
+        },
+        {
+          "id": "soul_weaver_total_level",
+          "type": "calculated",
+          "value_type": "integer",
+          "components": {
+            "type": "when",
+            "clauses": [
+              {
+                "condition": {
+                  "type": "defined",
+                  "stat": "$character.level"
+                },
+                "components": {
+                  "type": "stat",
+                  "stat": "$character.level"
+                }
+              },
+              {
+                "condition": {
+                  "type": "constant",
+                  "value_type": "bool",
+                  "value": true
+                },
+                "components": {
+                  "type": "constant",
+                  "value": 1,
+                  "value_type": "integer"
+                }
+              }
+            ]
+          },
+          "name": "Total level for soul scaling"
+        },
+        {
+          "id": "soul_points_max",
+          "type": "calculated",
+          "value_type": "integer",
+          "components": {
+            "type": "multiply",
+            "components": {
+              "type": "list",
+              "components": [
+                {
+                  "type": "constant",
+                  "value": 5,
+                  "value_type": "integer"
+                },
+                {
+                  "type": "stat",
+                  "stat": "soul_weaver_total_level"
+                }
+              ]
+            }
+          },
+          "name": "Soul points (max)"
+        },
+        {
+          "id": "soul_pickup_range",
+          "type": "calculated",
+          "value_type": "integer",
+          "components": {
+            "type": "multiply",
+            "components": {
+              "type": "list",
+              "components": [
+                {
+                  "type": "constant",
+                  "value": 5,
+                  "value_type": "integer"
+                },
+                {
+                  "type": "divide",
+                  "components": {
+                    "type": "list",
+                    "components": [
+                      {
+                        "type": "stat",
+                        "stat": "soul_weaver_total_level"
+                      },
+                      {
+                        "type": "constant",
+                        "value": 4,
+                        "value_type": "integer"
+                      }
+                    ]
+                  },
+                  "rounding_method": "up"
+                }
+              ]
+            }
+          },
+          "name": "Soul pickup range"
         },
         {
           "id": "actual_recharge_slots_on_short_rest",
