@@ -2,7 +2,7 @@
   "id": "5e",
   "name": "5e Fusion",
   "abbreviation": "5E+",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "min_app_version": "1.2.0",
   "character_indexed_stats": [
     "name",
@@ -36193,6 +36193,54 @@
             }
           },
           {
+            "type": "text",
+            "id": "class_display_soul_points_max_label",
+            "text": {
+              "type": "constant",
+              "value": "Soul points (max): ",
+              "value_type": "string"
+            },
+            "style": "text",
+            "bold": true,
+            "is_visible": {
+              "type": "stat",
+              "stat": "show_soul_scaling"
+            }
+          },
+          {
+            "type": "stat",
+            "id": "class_display_soul_points_max",
+            "stat": "soul_points_max",
+            "is_visible": {
+              "type": "stat",
+              "stat": "show_soul_scaling"
+            }
+          },
+          {
+            "type": "text",
+            "id": "class_display_soul_pickup_range_label",
+            "text": {
+              "type": "constant",
+              "value": "Soul pickup range: ",
+              "value_type": "string"
+            },
+            "style": "text",
+            "bold": true,
+            "is_visible": {
+              "type": "stat",
+              "stat": "show_soul_scaling"
+            }
+          },
+          {
+            "type": "stat",
+            "id": "class_display_soul_pickup_range",
+            "stat": "soul_pickup_range",
+            "is_visible": {
+              "type": "stat",
+              "stat": "show_soul_scaling"
+            }
+          },
+          {
             "type": "collapsible",
             "id": "class_display_equipment_choices_collapsible",
             "title": {
@@ -38897,6 +38945,60 @@
             ]
           },
           "name": "Total level for soul scaling"
+        },
+        {
+          "id": "show_soul_scaling",
+          "type": "calculated",
+          "value_type": "bool",
+          "components": {
+            "type": "and",
+            "components": {
+              "type": "list",
+              "components": [
+                {
+                  "type": "equals",
+                  "components": {
+                    "type": "list",
+                    "components": [
+                      {
+                        "type": "stat",
+                        "stat": "id"
+                      },
+                      {
+                        "type": "constant",
+                        "value": "soul_weaver",
+                        "value_type": "string"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "defined",
+                  "stat": "$character"
+                },
+                {
+                  "type": "contains",
+                  "haystack": {
+                    "type": "map",
+                    "components": {
+                      "type": "stat",
+                      "stat": "$character.classes"
+                    },
+                    "mapper": {
+                      "type": "stat",
+                      "stat": "$mapValue.class.id"
+                    }
+                  },
+                  "needle": {
+                    "type": "constant",
+                    "value": "soul_weaver",
+                    "value_type": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "name": "Show soul scaling"
         },
         {
           "id": "soul_points_max",
