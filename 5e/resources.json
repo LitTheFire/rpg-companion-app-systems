@@ -964,13 +964,13 @@
       "id": "fighter",
       "name": "Fighter",
       "path": "resources/class_fighter_phb.rpg",
-      "updated_at": "2026-10-15T12:00:00.000000"
+      "updated_at": "2026-10-17T13:05:00.000000"
     },
     {
       "id": "martial_artist",
       "name": "Martial Artist",
       "path": "resources/class_martial_artist_homebrew.rpg",
-      "updated_at": "2026-10-15T12:00:00.000000"
+      "updated_at": "2026-10-17T13:05:00.000000"
     },
     {
       "id": "monk",
@@ -1018,7 +1018,7 @@
       "id": "soul_weaver",
       "name": "Soul Weaver",
       "path": "resources/class_soul_weaver_homebrew.rpg",
-      "updated_at": "2026-10-15T12:00:00.000000"
+      "updated_at": "2026-10-17T13:05:00.000000"
     },
     {
       "id": "warlock",
@@ -6988,7 +6988,7 @@
       "id": "soul_weaver_lantern",
       "name": "Lantern",
       "path": "resources/item_lantern_homebrew.rpg",
-      "updated_at": "2026-10-15T12:00:00.000000"
+      "updated_at": "2026-10-17T13:05:00.000000"
     },
     {
       "id": "sovereign_glue",
