@@ -2437,6 +2437,12 @@
       "updated_at": "2026-02-07T10:30:48.627534"
     },
     {
+      "id": "fdec4958-0e57-4222-a296-624edd9d2164",
+      "name": "Temporal Overdrive",
+      "path": "resources/feat_temporal_overdrive.rpg",
+      "updated_at": "2026-11-06T12:00:00.000000"
+    },
+    {
       "id": "theologian",
       "name": "Theologian",
       "path": "resources/feat_theologian_ua.rpg",
