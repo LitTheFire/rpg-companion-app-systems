@@ -1369,10 +1369,40 @@
       "updated_at": "2026-10-17T10:23:38.134591"
     },
     {
+      "id": "1f861d8d-6f2d-4057-ab61-e9f08718f1ec",
+      "name": "Boon of Blazing Dawn",
+      "path": "resources/feat_boon_of_blazing_dawn.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "24a84c96-5f2e-4fe7-a85c-24bf2832830a",
+      "name": "Boon of Bloodshed",
+      "path": "resources/feat_boon_of_bloodshed.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "bde11406-038c-4f08-8466-177f6c4b5f1a",
+      "name": "Boon of Bountiful Health",
+      "path": "resources/feat_boon_of_bountiful_health.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "d284e490-fbf5-5c9c-aba2-9491cbbc75df",
       "name": "Boon of Combat Prowess",
       "path": "resources/feat_boon_of_combat_prowess_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.138620"
+    },
+    {
+      "id": "f4d9028f-ce50-4c43-b589-befe15eb35b8",
+      "name": "Boon of Communication",
+      "path": "resources/feat_boon_of_communication.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "84d4cfff-af00-44a4-b011-26a041b1a244",
+      "name": "Boon of Desperate Resilience",
+      "path": "resources/feat_boon_of_desperate_resilience.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
     },
     {
       "id": "6f76ebaa-aacd-5941-bf99-45d8b635cabb",
@@ -1387,16 +1417,40 @@
       "updated_at": "2026-10-17T10:23:38.148448"
     },
     {
+      "id": "42f368ca-5079-4a6f-bb8b-0ddc39de1f55",
+      "name": "Boon of Erupting Spellpower",
+      "path": "resources/feat_boon_of_erupting_spellpower.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "4b76e3e3-b8f6-4daa-9484-3cf6c7f36201",
+      "name": "Boon of Exquisite Radiance",
+      "path": "resources/feat_boon_of_exquisite_radiance.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "39bcf808-d463-5609-aadd-2c3de622e6ce",
       "name": "Boon of Fate",
       "path": "resources/feat_boon_of_fate_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.152982"
     },
     {
+      "id": "45eafc49-c6b0-430c-bf80-f4041dd4aa75",
+      "name": "Boon of Fluid Forms",
+      "path": "resources/feat_boon_of_fluid_forms.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "212ab22b-10db-5d3c-8234-50af8fd54e78",
       "name": "Boon of Fortitude",
       "path": "resources/feat_boon_of_fortitude_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.157507"
+    },
+    {
+      "id": "f8b82955-8260-41de-b708-0f30c58c1d34",
+      "name": "Boon of Fortune's Favour",
+      "path": "resources/feat_boon_of_fortunes_favour.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
     },
     {
       "id": "6e53007d-b9ae-5f66-81ab-6159185c67fd",
@@ -1423,6 +1477,12 @@
       "updated_at": "2026-10-17T10:23:38.173694"
     },
     {
+      "id": "f50edb42-a66a-4790-834c-d3c2aa0c4250",
+      "name": "Boon of Looming Shadows",
+      "path": "resources/feat_boon_of_looming_shadows.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "f6d8d398-617c-551c-b4ac-ddbaa981a3e6",
       "name": "Boon of Luck",
       "path": "resources/feat_boon_of_luck_dmg.rpg",
@@ -1433,6 +1493,18 @@
       "name": "Boon of Magic Resistance",
       "path": "resources/feat_boon_of_magic_resistance_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.182274"
+    },
+    {
+      "id": "de9b5314-08d3-45cd-99de-d70019ee6643",
+      "name": "Boon of Magic School Mastery",
+      "path": "resources/feat_boon_of_magic_school_mastery.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "4163f94b-9e36-4a6c-81ed-3c79359ce179",
+      "name": "Boon of Misty Escape",
+      "path": "resources/feat_boon_of_misty_escape.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
     },
     {
       "id": "df1a3bdc-aefd-51ff-97cd-d999a9f12b1f",
@@ -1453,6 +1525,12 @@
       "updated_at": "2026-10-17T10:23:38.195709"
     },
     {
+      "id": "00954195-bcb9-482c-87fa-f9ae11e16834",
+      "name": "Boon of Poison Mastery",
+      "path": "resources/feat_boon_of_poison_mastery.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "9eef16af-88e4-5f85-9f07-2e7075767dc9",
       "name": "Boon of Quick Casting",
       "path": "resources/feat_boon_of_quick_casting_dmg.rpg",
@@ -1469,6 +1547,18 @@
       "name": "Boon of Resilience",
       "path": "resources/feat_boon_of_resilience_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.208783"
+    },
+    {
+      "id": "466d4aec-19b5-4d05-99f6-f2f2b39a6bbb",
+      "name": "Boon of Revelry",
+      "path": "resources/feat_boon_of_revelry.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "90a8bf16-c699-4378-b9e8-999d6028f73f",
+      "name": "Boon of Siberys",
+      "path": "resources/feat_boon_of_siberys.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
     },
     {
       "id": "d025629a-7ac1-50fb-9e30-9bbee92a3cec",
@@ -1495,16 +1585,46 @@
       "updated_at": "2026-10-17T10:23:38.229203"
     },
     {
+      "id": "e465b660-a6ca-4f0e-9c2b-eed824c6a7f3",
+      "name": "Boon of Terror",
+      "path": "resources/feat_boon_of_terror.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "a6a442a7-5b5a-4969-80c8-1267a68f20ef",
+      "name": "Boon of the Bright Sun",
+      "path": "resources/feat_boon_of_the_bright_sun.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "71972d52-3cff-56aa-bb79-67ddcd859dad",
       "name": "Boon of the Fire Soul",
       "path": "resources/feat_boon_of_the_fire_soul_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.233403"
     },
     {
+      "id": "3c39ea22-e2ff-4301-bca7-69f178491cc3",
+      "name": "Boon of the Furious Storm",
+      "path": "resources/feat_boon_of_the_furious_storm.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
+      "id": "850d5893-636f-4c3d-8a01-7b9a52dd539e",
+      "name": "Boon of the Iron Mind",
+      "path": "resources/feat_boon_of_the_iron_mind.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
+    },
+    {
       "id": "600132ba-9a65-5fab-9348-48d775ff0f0a",
       "name": "Boon of the Night Spirit",
       "path": "resources/feat_boon_of_the_night_spirit_dmg.rpg",
       "updated_at": "2026-10-17T10:23:38.237911"
+    },
+    {
+      "id": "aad9cd11-aa13-4c61-8e2d-335c9ea54c55",
+      "name": "Boon of the Soul Drinker",
+      "path": "resources/feat_boon_of_the_soul_drinker.rpg",
+      "updated_at": "2026-11-12T09:00:00.000000"
     },
     {
       "id": "4cc66d5d-159e-5104-9b76-803d550d51dd",
